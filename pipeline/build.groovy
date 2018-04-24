@@ -2,7 +2,7 @@
 
 node {	
 	stage('Run Shell Script') {
-		sh 'pwd'
+		sh 'ls -la'
 		steps.sh "script/runscript.sh"
 	}	
 }
