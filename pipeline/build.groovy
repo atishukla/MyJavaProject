@@ -2,7 +2,7 @@
 
 node {	
 	stage('Run Shell Script') {
-		sh 'ls -la'
-		steps.sh "script/runscript.sh"
+		sh 'ls'
+		sh "script/runscript.sh"
 	}	
 }
