@@ -1,9 +1,12 @@
 #!groovy
 
 node {	
-	stage('Run Shell Script') {
-		dir(script) {
-			sh "script/runscript.sh"
-		}		
-	}	
+
+	stage 'Checkout'
+    checkout scm
+
+
+	stage 'Run Shell Script' 	
+	steps.sh 'script/runscript.sh'		
+		
 }
