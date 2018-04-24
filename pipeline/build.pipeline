@@ -1,5 +1,5 @@
 #!groovy
 
 node {
-	steps.sh 'echo 'Test me ...''
+	steps.sh "echo 'Test me ...'"
 }
