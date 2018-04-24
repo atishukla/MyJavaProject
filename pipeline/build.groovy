@@ -1,9 +1,7 @@
 #!groovy
 
-node {
-	
+node {	
 	stage('Run Shell Script') {
-		steps.sh "echo 'Test me ...'"
-		
+		steps.sh "./script/runscript.sh"
 	}	
 }
