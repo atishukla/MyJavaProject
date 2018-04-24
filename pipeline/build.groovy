@@ -1,9 +1,12 @@
 #!groovy
 
-node {	
+	
 
 	stage 'Checkout' {
-    	checkout scm
+
+		node {
+			checkout scm
+		}    	
 	}
 
 
@@ -11,4 +14,3 @@ node {
 		sh 'script/runscript.sh'	
 	}			
 		
-}
