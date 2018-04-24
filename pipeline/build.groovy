@@ -2,11 +2,13 @@
 
 node {	
 
-	stage 'Checkout'
-    checkout scm
+	stage 'Checkout' {
+    	checkout scm
+	}
 
 
-	stage 'Run Shell Script' 	
-	steps.sh 'script/runscript.sh'		
+	stage 'Run Shell Script' {
+		sh 'script/runscript.sh'	
+	}			
 		
 }
