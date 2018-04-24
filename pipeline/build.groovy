@@ -2,8 +2,8 @@
 
 node {	
 	stage('Run Shell Script') {
-		sh 'ls'
-		sh 'cd script'
-		sh "script/runscript.sh"
+		dir(script) {
+			sh "script/runscript.sh"
+		}		
 	}	
 }
