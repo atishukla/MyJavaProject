@@ -3,7 +3,7 @@
 node() {
 	checkout scm
 
-	stage (Run Shell script) {
+	stage ('Run Shell script') {
 		sh 'script/runscript.sh'
 	}
 }
