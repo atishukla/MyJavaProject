@@ -1,16 +1,9 @@
-#!groovy
+#!groovy	
 
-	
+node() {
+	stage 'Checkout SCM' {checkout scm}
 
-	stage 'Checkout' {
-
-		node {
-			checkout scm
-		}    	
+	stage 'Run Shell script' {
+		sh 'script/runscript.sh'
 	}
-
-
-	stage 'Run Shell Script' {
-		sh 'script/runscript.sh'	
-	}			
-		
+}
