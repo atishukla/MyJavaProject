@@ -1,9 +1,10 @@
 #!groovy	
 
 node() {
-	checkout scm
+	stage ('Check out code') {checkout scm}
+	
 
 	stage ('Run Shell script') {
-		sh 'script/runscript.sh'
+		sh 'sh script/runscript.sh'
 	}
 }
